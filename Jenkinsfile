@@ -9,7 +9,7 @@ node {
             sh 'go get -u github.com/gorilla/mux'
         }
         stage('running go calculator') {
-            sh 'go run microservice.go'
+            sh 'go run microservice.go &'
         }
 	stage('running stress test') {
             sh 'sbt gatling:test'
