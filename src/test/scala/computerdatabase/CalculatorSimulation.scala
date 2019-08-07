@@ -7,7 +7,7 @@ import scala.concurrent.duration._
 class CalculatorHistorySimulation extends Simulation {
 
   val httpProtocol = http
-    .baseUrl("http://localhost:8080")
+    .baseUrl("http://localhost:8031")
     .acceptHeader("application/json")
 
   val calculator = scenario("Stressing calculator history")
